@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Web Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <style>
+        .page1{
+            margin-top: 1px;
+            background-image: url(wallpaper.jpg);
+            background-size: cover;
+            height: 100vh;
+        }
+        .nav-bar{
+            height: 120px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            background : linear-gradient(0deg, rgba(218, 201, 201, 0.3) 0%,rgba(207, 214, 231, 0.8) 100%);
+            backdrop-filter: blur(5px);
+            border-radius: 25px;
+            img{
+                margin-left: 50px;
+            }
+            ul{
+                li{
+                    display: inline-block;
+                    margin-right: 50px;
+                    font-size: 19px;
+                    line-height: 80px;
+                    a{
+                        transition: all 0.4s ease-in-out;
+                        text-decoration: none;
+                        color: rgb(10, 26, 243);
+                    }
+                    :hover{
+                        font-size: 22px;
+                        color: rgb(220, 70, 70);
+                        text-decoration: underline;
+                        text-underline-offset: 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+        .headline{
+            text-align: center;
+            margin-top: 100px;
+            color: transparent;
+            background: radial-gradient(circle, #9056c4, #f10544);
+            -webkit-background-clip: text;
+            background-clip: text;
+            
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            margin-top: 20%;
+            button{
+                background: linear-gradient(315deg, rgba(206,13,238,1) 0%, rgba(244,9,74,1) 100%);
+                height: 70px;
+                width: 200px;
+                font-size: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+                border: 3px groove ;
+                border-radius: 20px;
+                box-shadow: 15px 10px 10px rgba(172, 27, 27,0.6);
+                animation: button-anime 1s infinite;
+            }
+        :hover{
+            cursor: pointer;
+        }
+        }
+        @keyframes button-anime {
+            0%{
+                scale: 1;
+            }
+            50%{
+                scale: 1.2;
+            }
+            100%{
+                scale: 1;
+            }
+        }
+        .page2{
+            margin-top: 20px;
+            background: url(page2.jpg) no-repeat;
+            background-size: cover;
+            height: 80vh;
+        }
+        .card-container{
+            display: flex;
+            .card-1, .card-2, .card-3, .card-4{
+                margin-top: 40px;
+                border: 3px solid gold;
+                box-shadow: 10px 10px 10px black;
+                border-radius: 20px;
+                width: calc(100vw / 4);
+                margin-right: 5px;
+                height: 250px;
+                backdrop-filter: blur(05px);
+                
+                p{
+                    color: rgb(57, 57, 91);
+                    text-align: center;
+                    font-size: 20px;
+                }
+                
+            }
+
+            .header{
+                text-align: center;
+                font-size: 25px;
+                color: #f10544;
+            }
+            
+        }
+        .intro{
+            .intro-heading{            
+                color: #f10544;
+                font-size: 30px;
+                text-align: center;
+                line-height: 100px;
+                /* animation: run-heading 2s infinite; */
+            }
+            p{
+                margin-left: 20px;
+                font-size: 20px;
+                margin-top: 30px;
+            }
+        }
+        .page3{
+            background:url(page4.jpg) no-repeat;
+            background-size: cover;
+            height: 70vh;
+            
+            .card-container{
+                .card-1, .card-2, .card-3, .card-4{
+                border: 3px groove rgb(60, 27, 203);
+                box-shadow: 10px 10px 10px 10px rgb(53, 50, 50);
+                border-radius: 20px;
+                width: calc(100vw / 4);
+                margin-right: 5px;
+                height: 250px;
+                backdrop-filter: blur(05px);
+                
+                p{
+                    color: rgb(224, 224, 234);
+                    text-align: center;
+                    font-size: 20px;
+                }
+                
+            }
+            }
+            
+        }
+        @keyframes run-heading {
+            0%{
+                font-size: 25px;
+                text-decoration: none;
+            }
+            50%{
+                font-size: 30px;
+                text-decoration: underline;
+            }
+            100%{
+                font-size: 25px;
+                text-decoration: none;
+            }
+            
+        }
+        
+        .page4{
+            background:url(page3.jpg) no-repeat;
+            background-size: cover;
+            height: 70vh;
+            
+            .card-container{
+                .card-1, .card-2, .card-3, .card-4{
+                border: 3px groove rgb(230, 95, 95);
+                box-shadow: 10px 10px 10px 10px rgb(53, 50, 50);
+                border-radius: 20px;
+                width: calc(100vw / 4);
+                margin-right: 5px;
+                height: 250px;
+                backdrop-filter: blur(05px);
+                .header{
+                    font-size: 20px;
+                    text-align: center;
+                    margin-top: 25%;
+                    color: rgb(74, 74, 156);
+                }
+                
+            }
+            }
+            
+        }
+        .page5{
+            width: 100vw;
+            margin-left: 48%;
+            button{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                height: 50px;
+                width: 150px;
+                border-radius: 20px;
+                font-size: 20px;
+                color: aqua;
+                box-shadow: 15px 10px 10px rgba(172, 27, 27,0.6);
+                animation: button-anime 1s infinite;
+                background: linear-gradient(315deg, rgba(206,13,238,1) 0%, rgba(244,9,74,1) 100%);
+            }   
+            :hover{
+                cursor: pointer;
+            }
+        }
+        .icon {
+            margin-right: 10px;
+            font-size: 30px;
+        }
+            
+        .foot-div{
+            background: black;
+            color: white;
+            height: 30px;
+            line-height: 30px;
+        }
+        .footer-head{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="page1">
+        <nav class="nav-bar">
+            <img src="cognifyz_logo.png" >
+            <ul>
+                <li><a href="https://cognifyz.com/">Home</a></li>
+                <li><a href="https://cognifyz.com/about-us/">About Us</a></li>
+                <li><a href="https://cognifyz.com/services/">Services</a></li>
+                <li><a href="https://cognifyz.com/courses/">Courses</a></li>
+                <li><a href="https://cognifyz.com/blog/">Blog</a></li>
+                <li><a href="https://cognifyz.com/contact-us/">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="headline">
+            <h1>"Web Developer Internship
+                Opportunities at<br> Cognifyz Technologies"</h1>
+        </div>
+        <div class="button">
+            <button onclick="window.location.href='https://cognifyz.com/internships/'">Learn More</button>
+        </div>
+    </div>
+    <div class="page2">
+        <div class="intro">
+            <h3 class="intro-heading">Introduction</h3>
+            <p>Our internship program is designed to offer students and recent graduates a valuable opportunity to gain practical experience in [industry/field]. Spanning [duration of the program, e.g., "12 weeks" or "6 months"], the program provides hands-on experience through meaningful projects and exposure to various aspects of our organization.
+
+                Participants will have the chance to work closely with experienced professionals, develop key skills, and contribute to real-world initiatives. This program aims to bridge the gap between academic learning and professional practice, fostering growth and preparing interns for future career success.</p>
+        </div>
+        <div class="card-container">
+            <div class="card-1">
+                <h3 class="header">Internship Program </h3>
+                <p>The Cognifyz Technologies Internship Program is a structured learning experience designed to provide students and individuals with hands-on exposure to real-world projects in the fields of technology, software development, and related areas.</p>
+            </div>
+            <div class="card-2">
+                <h3 class="header">Duration</h3>
+                <p>The duration of the internship is specified in the internship offer letter provided to selected candidates. It varies depending on the nature of the internship.</p>
+            </div>
+            <div class="card-3">
+                <h3 class="header">Who Is Eligible To Apply ?</h3>
+                <p>The internship program is open to students and individuals with varying levels of experience and educational backgrounds. Specific eligibility criteria may be outlined in individual internship postings.</p>
+            </div>
+            <div class="card-4">
+                <h3 class="header">How Can You Apply ?</h3>
+                <p>To apply for the internship program, visit our internship portal at [portal-link]. Follow the application instructions provided for each internship listing, and submit the required documents.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page3">
+        <div class="intro">
+            <h3 class="intro-heading">Highlights</h3>
+        </div>
+        <div class="card-container">
+            <div class="card-1">
+                <h3 class="header">Gain real-world experience working on live projects </h3>
+                <p>Work on live projects to gain practical skills</p>
+            </div>
+            <div class="card-2">
+                <h3 class="header">Receive mentorship from experienced professionals</h3>
+                <p>Receive guidance from experienced professionals</p>
+            </div>
+            <div class="card-3">
+                <h3 class="header">Enhance your skills with the latest technologies</h3>
+                <p>Learn and work with the latest industry technologies</p>
+            </div>
+            <div class="card-4">
+                <h3 class="header">Opportunities for a full-time position upon successfull completion </h3>
+                <p>Opportunities for a full-time position upon successfull completion</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page4">
+        <div class="intro">
+            <h3 class="intro-heading">Qualification</h3>
+        </div>
+        <div class="card-container">
+            <div class="card-1">
+                <h3 class="header">Proficiency in HTML,CSS and JavaScript</h3>
+            </div>
+            <div class="card-2">
+                <h3 class="header">Familiarity with Front-end frameworks like React or Angular</h3>
+            </div>
+            <div class="card-3">
+                <h3 class="header">Basic understanding of back-end technologies such as Python or Node.js</h3>
+            </div>
+            <div class="card-4">
+                <h3 class="header">Strong problem solving abilities and a keen eyes for details</h3>
+            </div>
+        </div>
+    </div>
+    <div class="page5">
+        <button onclick="window.location.href='https://cognifyz.com/glow_portfolio/web-development/'">Apply Now</button>
+    </div>
+    <footer>
+        <div class="footer-head">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="contact">
+            <p><i class="bi bi-geo-fill" style="margin-right: 5px;"></i>Nagpur, Maharashtra</p>
+            <p><i class="bi bi-envelope-fill" style="margin-right: 5px;"></i>cognifyztechnologies@gmail.com</p>
+            <a class="icon" href="https://www.linkedin.com/company/cognifyz-techonologies/"><i class="bi bi-linkedin"></i></a>
+            <a class="icon" href="https://www.instagram.com/cognifyz_tech/"><i class="bi bi-instagram"></i></a>
+            <a class="icon" href="https://www.youtube.com/channel/UCw3AbKUno4NQMWcPGFGOEZA"><i class="bi bi-youtube"></i></a>
+            <a class="icon" href="https://t.me/cognifyz_technologies"><i class="bi bi-telegram"></i></a>
+        </div>
+        <div class="foot-div">
+            <h4 style="text-align: center;">2024 &copy; All rights reserved by Cognifyz Technologies</h4>
+        </div>
+
+    </footer>
+</body>
+</html>
